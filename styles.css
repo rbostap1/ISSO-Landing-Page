@@ -110,24 +110,30 @@ header {
   transition: padding 0.3s ease, background 0.3s ease;
 }
 
-header.scrolled {
-  padding: 12px 20px;
-  background: rgba(5, 8, 16, 0.8);
-}
+@media (min-width: 769px) {
+  header.scrolled {
+    padding: 12px 20px;
+    background: rgba(5, 8, 16, 0.8);
+  }
 
-header.scrolled .logo {
-  width: 45px;
-  height: 45px;
+  header.scrolled .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  header.scrolled .header-text h1 {
+    font-size: 18px;
+  }
+
+  header.scrolled .header-text p {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 header.scrolled .header-text h1 {
-  font-size: 18px;
-}
-
-header.scrolled .header-text p {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
+  font-size: 16px;
 }
 
 .container {
@@ -558,19 +564,20 @@ section h2::after {
 
 /* ========== Responsive Design ========== */
 @media (max-width: 768px) {
+  /* Keep desktop navigation layout on small screens */
   .header-content {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 40px;
   }
 
   .logo-section {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-start;
   }
 
   .nav-social {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-end;
   }
 
   .hero {
