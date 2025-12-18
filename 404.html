@@ -3,134 +3,110 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>404 — Page not found</title>
+  <title>404 — Information Systems Student Organization</title>
+  <meta name="description" content="404 page not found for Information Systems Student Organization." />
   <link rel="icon" href="./Assets/4.png" type="image/png">
   <link rel="apple-touch-icon" href="./Assets/4.png">
-  <style>
-    :root{
-      --bg1:#071033;--bg2:#0f1724;--card:#071022;--accent:#6ee7b7;--muted:#9aa4b2;
-      --glass: rgba(255,255,255,0.04);--max-width:920px;--accent-2:#60a5fa;
-    }
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;color:#e6eef6;
-      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-      background:
-        radial-gradient(800px 400px at 10% 10%, rgba(110,231,183,0.06), transparent),
-        radial-gradient(700px 350px at 90% 90%, rgba(96,165,250,0.04), transparent),
-        linear-gradient(180deg,var(--bg1),var(--bg2));
-    }
-    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px 24px;box-sizing:border-box;}
-    .card{width:100%;max-width:var(--max-width);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:16px;padding:40px;box-shadow:0 12px 40px rgba(2,6,23,0.6);display:flex;gap:28px;align-items:center;
-      backdrop-filter: blur(8px);box-sizing:border-box;border:1px solid rgba(255,255,255,0.03);}
-    .logo{flex:0 0 140px;display:flex;align-items:center;justify-content:center;border-radius:12px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);}
-    .logo img{max-width:100%;max-height:96px;display:block;object-fit:contain;transition:transform .45s ease;}
-    .logo:hover img{transform:scale(1.03) rotate(-2deg);}
-    .content{flex:1;min-width:0;}
-    h1{margin:0 0 8px 0;font-size:clamp(20px,3.4vw,30px);letter-spacing:-0.01em;}
-    p.lead{margin:0 0 16px 0;color:var(--muted);font-size:clamp(14px,1.6vw,16px);line-height:1.45;}
-    .status{
-      display:inline-block;
-      padding:8px 14px;
-      background:linear-gradient(90deg, rgba(110,231,183,0.12), rgba(96,165,250,0.08));
-      color:var(--accent);
-      border-radius:999px;
-      font-weight:700;
-      font-size:13px;
-      letter-spacing:0.02em;
-      display:block;           /* center as a block element */
-      text-align:center;       /* center text */
-      margin:12px auto;        /* vertical spacing and horizontal centering */
-    }
-    .actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#06262a;text-decoration:none;font-weight:700;}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);}
-    .social{
-      margin-top:12px;
-      display:flex;
-      gap:12px;
-      align-items:center;
-      flex-wrap:wrap;
-      justify-content:center; /* center icons horizontally */
-    }
-    .social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);
-      color:var(--muted);text-decoration:none;transition:all .18s ease;box-shadow:0 6px 18px rgba(2,6,23,0.45);}
-    .social a:hover{transform:translateY(-4px);color:var(--accent);border-color:rgba(110,231,183,0.14);box-shadow:0 12px 30px rgba(14,30,60,0.5);}
-    .social a svg{width:20px;height:20px;display:block;fill:currentColor;transition:transform .18s ease;}
-    footer{
-      margin-top:16px;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;      /* center footer text */
-    }
-    @media (max-width:720px){
-      .card{
-        flex-direction:column;
-        padding:28px;
-        align-items:center; /* center the card contents */
-      }
-      .logo{
-        flex:0 0 auto;
-        width:96px;
-        height:auto;
-        margin:0 auto; /* ensure logo is centered */
-      }
-      .logo img{max-height:72px;}
-      .content{text-align:center;}
-      .social{justify-content:center;}
-      .actions{justify-content:center;} /* center buttons on mobile */
-      footer{text-align:center;}
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <main class="card" role="main" aria-labelledby="title">
-      <div class="logo" aria-hidden="false">
-        <img src="./Assets/4.png" alt="ISSO logo">
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="./Assets/4.png" alt="ISSO Logo">
+            </div>
+            <div class="header-text">
+              <h1>Information Systems Student Organization</h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <h1 id="title">404 — Page not found</h1>
-        <p class="lead">Sorry — the page you requested doesn't exist or has been moved.</p>
-        <div class="status" aria-live="polite">Error • Not Found</div>
+    </header>
 
-        <div class="actions">
-          <a class="btn" href="/" title="Go home">Go to homepage</a>
-        </div>
-
-        <div class="social" aria-label="Social links">
-          <a href="https://www.instagram.com/kent_isso/" data-icon="instagram" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/ISSOKent" data-icon="facebook" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.linkedin.com/company/kentisso" data-icon="linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://discord.gg/53NNvsYZFd" data-icon="discord" aria-label="Discord" title="Discord" target="_blank" rel="noopener noreferrer"></a>
-        </div>
-
-        <footer>Thank you for your patience. — ISSO Executive Board</footer>
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <section class="hero fade-in text-center">
+          <span class="status-badge">404 Not Found</span>
+          <h2>We couldn't find that page</h2>
+          <p class="hero-subtitle">The link may be broken or the page may have moved. Try returning to the homepage or exploring the sections below.</p>
+          <div class="hero-actions">
+            <div class="cta-text"> 
+              <a href="/" title="Homepage">Go Home</a> 
+              · 
+              <a href="https://discord.gg/53NNvsYZFd" title="Connect on Discord" target="_blank" rel="noopener noreferrer">Connect</a>
+            </div>
+          </div>
+          <div class="social-links mt-large" aria-label="Social links">
+            <a href="https://www.instagram.com/kent_isso/" class="social-link" data-icon="instagram" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.facebook.com/ISSOKent" class="social-link" data-icon="facebook" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.linkedin.com/company/kentisso" class="social-link" data-icon="linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://discord.gg/53NNvsYZFd" class="social-link" data-icon="discord" aria-label="Discord" title="Discord" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </section>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2025 Information Systems Student Organization.</p>
+      </div>
+    </footer>
   </div>
 
+  <!-- SVG Icon Loader Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const base = 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/';
-      const anchors = document.querySelectorAll('.social [data-icon]');
+      const anchors = document.querySelectorAll('[data-icon]');
+      
       anchors.forEach(a => {
         const name = a.dataset.icon;
         const url = `${base}${name}.svg`;
-        fetch(url).then(res => {
-          if (!res.ok) throw new Error('Icon fetch failed');
-          return res.text();
-        }).then(svgText => {
-          svgText = svgText.replace(/<\?xml.*?\?>/g, '')
-                           .replace(/<!DOCTYPE.*?>/gi, '')
-                           .replace(/\s(width|height)=["'][^"']*["']/gi, '')
-                           .replace(/fill="[^"]*"/gi, 'fill="currentColor"');
-          if (!/xmlns=/.test(svgText)) svgText = svgText.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
-          a.innerHTML = svgText;
-          const svgEl = a.querySelector('svg');
-          if (svgEl) { svgEl.setAttribute('aria-hidden', 'true'); svgEl.removeAttribute('role'); }
-        }).catch(() => { a.textContent = name.charAt(0).toUpperCase(); });
+        
+        fetch(url)
+          .then(res => {
+            if (!res.ok) throw new Error('Icon fetch failed');
+            return res.text();
+          })
+          .then(svgText => {
+            svgText = svgText
+              .replace(/<\?xml.*?\?>/g, '')
+              .replace(/<!DOCTYPE.*?>/gi, '')
+              .replace(/\s(width|height)=["'][^"']*["']/gi, '')
+              .replace(/fill="[^"]*"/gi, 'fill="currentColor"');
+            
+            if (!/xmlns=/.test(svgText)) {
+              svgText = svgText.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+            }
+            
+            a.innerHTML = svgText;
+            const svgEl = a.querySelector('svg');
+            if (svgEl) {
+              svgEl.setAttribute('aria-hidden', 'true');
+              svgEl.removeAttribute('role');
+            }
+          })
+          .catch(() => {
+            a.textContent = name.charAt(0).toUpperCase();
+          });
       });
+
+      // Header scroll effect
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        if (scrollTop > 30) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
     });
   </script>
 </body>

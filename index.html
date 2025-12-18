@@ -3,121 +3,252 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Information Systems Student Organization</title>
+  <title>Information Systems Student Organization - ISSO</title>
+  <meta name="description" content="Join the Information Systems Student Organization at Kent State University. Network, learn, and grow with peers in technology." />
   <link rel="icon" href="./Assets/4.png" type="image/png">
   <link rel="apple-touch-icon" href="./Assets/4.png">
-  <style>
-    :root{
-      --bg1:#071033;
-      --bg2:#0f1724;
-      --card:#071022;
-      --accent:#6ee7b7;
-      --muted:#9aa4b2;
-      --glass: rgba(255,255,255,0.04);
-      --max-width:920px;
-      --accent-2:#60a5fa;
-    }
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;color:#e6eef6;
-      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
-      background:
-        radial-gradient(800px 400px at 10% 10%, rgba(110,231,183,0.06), transparent),
-        radial-gradient(700px 350px at 90% 90%, rgba(96,165,250,0.04), transparent),
-        linear-gradient(180deg,var(--bg1),var(--bg2));
-    }
-    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px 24px;box-sizing:border-box;}
-    .card{
-      width:100%;max-width:var(--max-width);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:16px;padding:40px;box-shadow:0 12px 40px rgba(2,6,23,0.6);display:flex;gap:28px;align-items:center;
-      backdrop-filter: blur(8px);box-sizing:border-box;border:1px solid rgba(255,255,255,0.03);
-    }
-
-    /* Logo area */
-    .logo{flex:0 0 140px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);}
-    .logo img{max-width:100%;max-height:96px;display:block;object-fit:contain;transition:transform .45s ease;}
-    .logo:hover img{transform:scale(1.03) rotate(-2deg);}
-
-    .content{flex:1;min-width:0;}
-    h1{margin:0 0 8px 0;font-size:clamp(20px,3.4vw,30px);letter-spacing:-0.01em;}
-    p.lead{margin:0 0 16px 0;color:var(--muted);font-size:clamp(14px,1.6vw,16px);line-height:1.45;}
-    .status{display:inline-block;padding:8px 14px;background:linear-gradient(90deg, rgba(110,231,183,0.12), rgba(96,165,250,0.08));color:var(--accent);border-radius:999px;font-weight:700;font-size:13px;letter-spacing:0.02em;}
-
-    /* Social links */
-    .social{
-      margin-top:18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;
-    }
-    .social a{
-      display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);
-      color:var(--muted);text-decoration:none;transition:all .18s ease;box-shadow:0 6px 18px rgba(2,6,23,0.45);
-    }
-    .social a:hover{transform:translateY(-4px);color:var(--accent);border-color:rgba(110,231,183,0.14);box-shadow:0 12px 30px rgba(14,30,60,0.5);}
-    .social a svg{width:20px;height:20px;display:block;fill:currentColor;transition:transform .18s ease;}
-    .social a:focus{outline:2px solid rgba(110,231,183,0.12);outline-offset:2px;border-radius:10px;}
-
-    footer{margin-top:16px;color:var(--muted);font-size:13px;}
-
-    @media (max-width:720px){
-      .card{flex-direction:column;padding:28px;}
-      .logo{flex:0 0 auto;width:96px;height:auto;}
-      .logo img{max-height:72px;}
-      .content{text-align:center;}
-      .social{justify-content:center;}
-      footer{text-align:center;}
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <main class="card" role="main" aria-labelledby="title">
-      <div class="logo" aria-hidden="false">
-        <img src="./Assets/4.png" alt="Company logo">
-      </div>
-      <div class="content">
-        <h1 id="title">Website Is on The Way!</h1>
-        <p class="lead">We are currently at work building a website, please stay tuned for updates. Follow us on social media and join our Discord so that your always up to date!</p>
-        <div class="status" aria-live="polite">Coming Soon</div>
-
-        <div class="social" aria-label="Social links">
-          <a href="https://www.instagram.com/kent_isso/" data-icon="instagram" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/ISSOKent" data-icon="facebook" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.linkedin.com/company/kentisso" data-icon="linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://discord.gg/53NNvsYZFd" data-icon="discord" aria-label="Discord" title="Discord" target="_blank" rel="noopener noreferrer"></a>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="./Assets/4.png" alt="ISSO Logo">
+            </div>
+            <div class="header-text">
+              <h1>Information Systems Student Organization</h1>
+            </div>
+          </div>
         </div>
+      </div>
+    </header>
 
-        <footer>Thank you for your patience. — ISSO Executive Board</footer>
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero fade-in">
+          <h1>Welcome to ISSO</h1>
+          <p class="hero-subtitle">Empowering members through industry connections, networking, and hands-on learning.</p>
+          <div class="hero-actions">
+            <span class="cta-text">Follow Us · Connect</span>
+          </div>
+          <div class="social-links" style="margin-top: 32px;" aria-label="Social links">
+            <a href="https://www.instagram.com/kent_isso/" class="social-link" data-icon="instagram" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.facebook.com/ISSOKent" class="social-link" data-icon="facebook" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://www.linkedin.com/company/kentisso" class="social-link" data-icon="linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://discord.gg/53NNvsYZFd" class="social-link" data-icon="discord" aria-label="Discord" title="Discord" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </section>
+
+        <!-- Under Construction Section -->
+        <section>
+          <div class="card">
+            <span class="status-badge">🚧 Under Construction 🚧</span>
+            <h3>Website still in progress</h3>
+            <p>We're still at work making a website for the Information Systems Student Organization. Stay tuned for updates!</p>
+          </div>
+        </section>
+
+        <!-- Executive Board Section -->
+        <section>
+          <h2>Leadership Team</h2>
+          <div class="grid grid-3">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">🗣️</div>
+                <h3 class="card-title">Faculty Advisor</h3>
+              </div>
+              <div class="card-content">
+                <p>The Advisor is who looks over the organization, making recommendations, and pointing the organization in the right direction. The advisor is also responsible to make sure the organization is following all university guidelines and state of Ohio laws.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">🏛️</div>
+                <h3 class="card-title">Executive Director</h3>
+              </div>
+              <div class="card-content">
+                <p>The Executive Director is responsible for making and calling meetings, facilitating events, and overseeing all organization business/operations. The Executive Director is also responsible for making sure all directors are doing their job correctly and efficiently.
+</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">🤝</div>
+                <h3 class="card-title">Director of Operations</h3>
+              </div>
+              <div class="card-content">
+                <p>The Director of Operations is responsible for assisting the Executive Director in any way possible when the Executive Director is not present. They are also responsible for steering the organization in the right direction.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">📣</div>
+                <h3 class="card-title">Director of Communications</h3>
+              </div>
+              <div class="card-content">
+                <p>The Director of Communications is responsible for communicating with organization members past or present, and reaching out to potential speakers. They are the primary contact for membership affairs and communications</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">💰</div>
+                <h3 class="card-title">Director of Finance</h3>
+              </div>
+              <div class="card-content">
+                <p>The Director of Finance is responsible for maintaining organizational funds, making financial reports to present at meetings, make recommendations , transactions when approved by the Executive Board, etc.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">⚙️</div>
+                <h3 class="card-title">Director of Administration</h3>
+              </div>
+              <div class="card-content">
+                <p>The Director of Administration is responsible for communicating with members, making announcements provided to them for public viewing for meetings, events, etc. They are also responsible for keeping meeting minutes.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Meetings Section -->
+        <section id="meetings">
+          <h2>Meeting Schedule</h2>
+          <div class="grid grid-2">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">📅</div>
+                <h3 class="card-title">When We Meet</h3>
+              </div>
+              <div class="card-content">
+                <div class="meeting-grid">
+                  <div class="meeting-box">
+                    <div class="meeting-label">Frequency</div>
+                    <p class="meeting-value">TBD for Spring 2026</p>
+                  </div>
+                  <div class="meeting-box">
+                    <div class="meeting-label">Time</div>
+                    <p class="meeting-value">TBD for Spring 2026</p>
+                  </div>
+                  <div class="meeting-box">
+                    <div class="meeting-label">Duration</div>
+                    <p class="meeting-value">TBD for Spring 2026</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-icon">📍</div>
+                <h3 class="card-title">Where We Meet</h3>
+              </div>
+              <div class="card-content">
+                <p>Location details are shared in our <strong>Discord server</strong> before the first meeting.</p>
+                <p>Check Discord regularly for the most up-to-date meeting information and any last-minute changes.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- How to Join Section -->
+        <section>
+          <h2>How to Join</h2>
+          <div class="grid grid-2">
+            <div class="card grid-full">
+              <ol class="steps-list">
+                <li class="step-item">
+                  <h4 class="step-title">Complete the Anti-Hazing Training</h4>
+                  <p class="step-description">By state law and univerity policy, you must complete the required Anti-Hazing training before joining any student organization.</p>
+                </li>
+                <li class="step-item">
+                  <h4 class="step-title">Join Our Discord Server</h4>
+                  <p class="step-description">Click the Discord link to join our community. This is where we share real-time updates, meeting times, and any importtant information.</p>
+                </li>
+                <li class="step-item">
+                  <h4 class="step-title">Request Membership</h4>
+                  <p class="step-description">Head to KSU Engage and sign in. Search for ISSO and fill out the "Membership Request Form". Application deadline is TBD for Spring 2026. Application open on January 5th, 2026.</p>
+                </li>
+                <li class="step-item">
+                  <h4 class="step-title">Get Involved</h4>
+                  <p class="step-description">Participate in events, volunteer for roles, and connect with members. There are many ways to contribute and grow with us.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Under Construction Section -->
       </div>
     </main>
-  </div>
 
-  <!-- script: fetch SVGs from simple-icons via jsDelivr and inject them -->
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2025 Information Systems Student Organization. All rights reserved.</p>
+        <p>Join us on <a href="https://discord.gg/53NNvsYZFd" target="_blank" rel="noopener noreferrer">Discord</a> for more information.</p>
+      </div>
+    </footer>
+  <!-- SVG Icon Loader Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const base = 'https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/';
-      const anchors = document.querySelectorAll('.social [data-icon]');
+      const anchors = document.querySelectorAll('[data-icon]');
+      
       anchors.forEach(a => {
         const name = a.dataset.icon;
         const url = `${base}${name}.svg`;
-        fetch(url).then(res => {
-          if (!res.ok) throw new Error('Icon fetch failed');
-          return res.text();
-        }).then(svgText => {
-          // remove XML/DOCTYPE, strip width/height, normalize fill, ensure xmlns
-          svgText = svgText.replace(/<\?xml.*?\?>/g, '')
-                           .replace(/<!DOCTYPE.*?>/gi, '')
-                           .replace(/\s(width|height)=["'][^"']*["']/gi, '')
-                           .replace(/fill="[^"]*"/gi, 'fill="currentColor"');
-          if (!/xmlns=/.test(svgText)) {
-            svgText = svgText.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
-          }
-          a.innerHTML = svgText;
-          const svgEl = a.querySelector('svg');
-          if (svgEl) {
-            svgEl.setAttribute('aria-hidden', 'true');
-            svgEl.removeAttribute('role');
-          }
-        }).catch(() => {
-          a.textContent = name.charAt(0).toUpperCase();
-        });
+        
+        fetch(url)
+          .then(res => {
+            if (!res.ok) throw new Error('Icon fetch failed');
+            return res.text();
+          })
+          .then(svgText => {
+            svgText = svgText
+              .replace(/<\?xml.*?\?>/g, '')
+              .replace(/<!DOCTYPE.*?>/gi, '')
+              .replace(/\s(width|height)=["'][^"']*["']/gi, '')
+              .replace(/fill="[^"]*"/gi, 'fill="currentColor"');
+            
+            if (!/xmlns=/.test(svgText)) {
+              svgText = svgText.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+            }
+            
+            a.innerHTML = svgText;
+            const svgEl = a.querySelector('svg');
+            if (svgEl) {
+              svgEl.setAttribute('aria-hidden', 'true');
+              svgEl.removeAttribute('role');
+            }
+          })
+          .catch(() => {
+            a.textContent = name.charAt(0).toUpperCase();
+          });
       });
+
+      // Header scroll effect
+      const header = document.querySelector('header');
+      
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        
+        if (scrollTop > 30) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }, { passive: true });
     });
   </script>
 </body>
