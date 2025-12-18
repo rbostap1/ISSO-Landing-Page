@@ -107,34 +107,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: padding 0.3s ease, background 0.3s ease;
 }
 
-@media (min-width: 769px) {
-  header.scrolled {
-    padding: 12px 20px;
-    background: rgba(5, 8, 16, 0.8);
-  }
 
-  header.scrolled .logo {
-    width: 45px;
-    height: 45px;
-  }
-
-  header.scrolled .header-text h1 {
-    font-size: 18px;
-  }
-
-  header.scrolled .header-text p {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-header.scrolled .header-text h1 {
-  font-size: 16px;
-}
 
 .container {
   max-width: 1200px;
@@ -181,7 +156,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .logo img {
@@ -194,7 +168,6 @@ footer {
 .header-text h1 {
   font-size: 20px;
   margin: 0;
-  transition: font-size 0.3s ease;
 }
 
 header.scrolled .header-text h1 {
